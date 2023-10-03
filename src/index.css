@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Geologica:wght@300&family=Oswald:wght@200&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Geologica:wght@300&family=Oswald:wght@200&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .input {
+    @apply px-5 py-2 w-full border-solid border-2 border-zinc-200 outline-none font-Roboto font-bold rounded-md mb-3;
+}
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+  .padding-x {
+    @apply sm:px-16 px-1;
+  }
+  .padding-y {
+    @apply sm:py-2 py-52;
+  }
+  .overView--icon{
+    @apply text-blue-700 text-2xl
+  }
+  .overView__h1{
+    @apply flex items-center gap-2
+  }
+  .grid__container{
+   @apply grid sm:grid-cols-2 grid-cols-1  gap-5 
+  }
+  .overView__iconBox{
+    @apply flex sm:flex-row  flex-col justify-around  items-center gap-5
+  }
+  
+}
+.CatContainer{
+  background: url("./assets/images/bg-cat.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+}
